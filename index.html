@@ -3,188 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hafeez Habib Portfolio - Web Developer & Digital Marketer">
+  <meta name="description" content="Hafeez Habib - Web Developer & Digital Marketing Professional">
   <title>Hafeez Habib | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style> /* General */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  background: #28a745;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-.btn:hover {
-  background: #218838;
-}
-
-/* Hero Section */
-.hero {
-  background: #007bff;
-  color: #fff;
-  padding: 100px 20px;
-  text-align: center;
-}
-.hero h1 span {
-  color: #ffc107;
-}
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 50px 0;
-}
-
-/* Sections */
-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
-}
-
-/* About */
-.about p {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-
-/* Skills */
-.skills .skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.skills .skill {
-  background: #f4f4f4;
-  padding: 15px 25px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-/* Projects */
-.projects .project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.projects .project {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 5px;
-  width: 300px;
-  text-align: center;
-}
-.projects .project img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-/* Contact */
-.contact form {
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.contact input, .contact textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 100%;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
-  color: #fff;
-}
-</style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <!-- Header / Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <h1>Hello, I'm <span>Hafeez Habib</span></h1>
-      <p>Web Developer & Digital Marketer</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </header>
+<body style="margin:0;font-family:'Roboto',sans-serif;line-height:1.6;color:#333;scroll-behavior:smooth;">
 
-  <!-- About Me Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hi! I am Hafeez, a professional web developer with over 10 years of experience in building responsive websites, SEO-friendly digital marketing solutions, and creative online presence for businesses. I love turning ideas into reality and helping clients grow online.</p>
+  <!-- Navbar -->
+  <nav style="background:#fff;padding:20px 0;box-shadow:0 2px 5px rgba(0,0,0,0.1);position:sticky;top:0;z-index:1000;">
+    <div style="width:90%;max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;">
+      <h1 style="margin:0;font-weight:bold;">Hafeez Habib</h1>
+      <ul style="list-style:none;display:flex;gap:20px;margin:0;padding:0;">
+        <li><a href="#home" style="text-decoration:none;color:#333;font-weight:500;">Home</a></li>
+        <li><a href="#about" style="text-decoration:none;color:#333;font-weight:500;">About</a></li>
+        <li><a href="#skills" style="text-decoration:none;color:#333;font-weight:500;">Skills</a></li>
+        <li><a href="#projects" style="text-decoration:none;color:#333;font-weight:500;">Projects</a></li>
+        <li><a href="#contact" style="text-decoration:none;color:#333;font-weight:500;">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg') center/cover no-repeat;color:#fff;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;">
+    <div>
+      <h1 style="font-size:3rem;">Hi, I'm <span style="color:#ffc107;">Hafeez Habib</span></h1>
+      <p style="font-size:1.2rem;margin:20px 0;">Professional Web Developer & Digital Marketing Specialist</p>
+      <a href="#projects" style="display:inline-block;background:#ffc107;color:#333;padding:10px 20px;border-radius:5px;text-decoration:none;">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" style="padding:80px 20px;text-align:center;">
+    <div style="max-width:800px;margin:auto;">
+      <h2 style="font-size:2.5rem;margin-bottom:30px;">About Me</h2>
+      <p>I am a professional web developer with over 10 years of experience creating responsive websites, digital marketing solutions, and modern web applications. I help businesses establish a strong online presence and convert visitors into clients.</p>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skill-list">
-        <div class="skill">HTML & CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">PHP & MySQL</div>
-        <div class="skill">SEO & Digital Marketing</div>
-        <div class="skill">Web Design & UX</div>
+  <section id="skills" style="padding:80px 20px;text-align:center;background:#f4f4f4;">
+    <div style="max-width:800px;margin:auto;">
+      <h2 style="font-size:2.5rem;margin-bottom:30px;">Skills</h2>
+      <div>
+        <div style="margin-bottom:20px;text-align:left;">
+          <h3>HTML & CSS</h3>
+          <div style="background:#ddd;border-radius:5px;"><span style="display:block;height:15px;width:95%;background:#007bff;border-radius:5px;"></span></div>
+        </div>
+        <div style="margin-bottom:20px;text-align:left;">
+          <h3>JavaScript</h3>
+          <div style="background:#ddd;border-radius:5px;"><span style="display:block;height:15px;width:85%;background:#007bff;border-radius:5px;"></span></div>
+        </div>
+        <div style="margin-bottom:20px;text-align:left;">
+          <h3>PHP & MySQL</h3>
+          <div style="background:#ddd;border-radius:5px;"><span style="display:block;height:15px;width:80%;background:#007bff;border-radius:5px;"></span></div>
+        </div>
+        <div style="margin-bottom:20px;text-align:left;">
+          <h3>SEO & Digital Marketing</h3>
+          <div style="background:#ddd;border-radius:5px;"><span style="display:block;height:15px;width:90%;background:#007bff;border-radius:5px;"></span></div>
+        </div>
+        <div style="margin-bottom:20px;text-align:left;">
+          <h3>UI/UX Design</h3>
+          <div style="background:#ddd;border-radius:5px;"><span style="display:block;height:15px;width:85%;background:#007bff;border-radius:5px;"></span></div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <div class="project">
-          <img src="project1.png" alt="Project 1">
-          <h3>Website Design for Client A</h3>
-          <p>Responsive website with modern UI/UX and SEO optimization.</p>
-          <a href="#" class="btn">View Project</a>
+  <section id="projects" style="padding:80px 20px;text-align:center;">
+    <div style="max-width:1200px;margin:auto;">
+      <h2 style="font-size:2.5rem;margin-bottom:30px;">My Projects</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
+        <div style="position:relative;width:300px;overflow:hidden;border-radius:10px;">
+          <img src="project1.jpg" alt="Project 1" style="width:100%;transition:transform 0.5s;">
+          <div style="position:absolute;bottom:0;background:rgba(0,0,0,0.7);color:#fff;width:100%;padding:20px;transform:translateY(100%);transition:transform 0.3s;text-align:center;">
+            <h3>Website Design</h3>
+            <p>Modern responsive website for client</p>
+            <a href="#" style="display:inline-block;background:#007bff;color:#fff;padding:5px 15px;border-radius:5px;text-decoration:none;margin-top:10px;">View Project</a>
+          </div>
         </div>
-        <div class="project">
-          <img src="project2.png" alt="Project 2">
-          <h3>E-commerce Site for Client B</h3>
-          <p>Fully functional online store with payment integration.</p>
-          <a href="#" class="btn">View Project</a>
+        <div style="position:relative;width:300px;overflow:hidden;border-radius:10px;">
+          <img src="project2.jpg" alt="Project 2" style="width:100%;transition:transform 0.5s;">
+          <div style="position:absolute;bottom:0;background:rgba(0,0,0,0.7);color:#fff;width:100%;padding:20px;transform:translateY(100%);transition:transform 0.3s;text-align:center;">
+            <h3>E-commerce Store</h3>
+            <p>Fully functional online shop</p>
+            <a href="#" style="display:inline-block;background:#007bff;color:#fff;padding:5px 15px;border-radius:5px;text-decoration:none;margin-top:10px;">View Project</a>
+          </div>
         </div>
-        <!-- Add more projects here -->
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Looking to work together? Reach out to me:</p>
-      <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+  <section id="contact" style="padding:80px 20px;text-align:center;background:#f4f4f4;">
+    <div style="max-width:600px;margin:auto;">
+      <h2 style="font-size:2.5rem;margin-bottom:30px;">Contact Me</h2>
+      <p>Interested in working together? Send me a message:</p>
+      <form action="mailto:youremail@example.com" method="post" enctype="text/plain" style="display:flex;flex-direction:column;gap:15px;">
+        <input type="text" name="name" placeholder="Your Name" required style="padding:10px;border-radius:5px;border:1px solid #ccc;width:100%;">
+        <input type="email" name="email" placeholder="Your Email" required style="padding:10px;border-radius:5px;border:1px solid #ccc;width:100%;">
+        <textarea name="message" rows="5" placeholder="Your Message" required style="padding:10px;border-radius:5px;border:1px solid #ccc;width:100%;"></textarea>
+        <button type="submit" style="background:#007bff;color:#fff;padding:10px;border:none;border-radius:5px;cursor:pointer;">Send Message</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
+  <footer style="text-align:center;padding:20px;background:#333;color:#fff;">
+    <p>&copy; 2025 Hafeez Habib | All Rights Reserved</p>
+  </footer>
+
+  <!-- Inline Hover Effect Script -->
+  <script>
+    const projects = document.querySelectorAll('section#projects div[position="relative"]');
+    projects.forEach(p => {
+      const img = p.querySelector('img');
+      const overlay = p.querySelector('div');
+      p.addEventListener('mouseenter', () => {
+        img.style.transform = 'scale(1.1)';
+        overlay.style.transform = 'translateY(0)';
+      });
+      p.addEventListener('mouseleave', () => {
+        img.style.transform = 'scale(1)';
+        overlay.style.transform = 'translateY(100%)';
+      });
+    });
+  </script>
+</body>
+</html>
